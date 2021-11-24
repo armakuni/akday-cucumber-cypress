@@ -1,0 +1,27 @@
+{
+  "name": "akday-cucumber-cypress",
+  "description": "AK Day project to test out cucumber-cypress",
+  "version": "0.0.1",
+  "main": "index.js",
+  "devDependencies": {
+    "cypress": "^9.1.0",
+    "cypress-cucumber-preprocessor": "^4.3.0",
+    "har-validator": "^5.1.5",
+    "http-server": "^14.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/armakuni/akday-cucumber-cypress.git"
+  },
+  "scripts": {
+    "start": "http-server src --cors --port 8123 -o",
+    "test": "cypress run",
+    "test:dev": "cypress open"
+  },
+  "author": "Armakuni",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/armakuni/akday-cucumber-cypress/issues"
+  },
+  "homepage": "https://github.com/armakuni/akday-cucumber-cypress#readme"
+}
