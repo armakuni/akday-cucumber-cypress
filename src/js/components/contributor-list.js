@@ -1,3 +1,5 @@
+/* HTML templates */
+
 const renderContributorHTML = contributor => `
 
     <li class="contributor">${contributor}</li>
@@ -15,6 +17,8 @@ const renderHTML = contributors => `
 
 `;
 
+/* Web component */
+
 class ContributorList extends HTMLElement {
 
     constructor() {
@@ -22,17 +26,8 @@ class ContributorList extends HTMLElement {
     }
 
     connectedCallback() {
-        this.ensureStyleSheet();
+        ensureStyleSheet();
         this.render();
-    }
-
-    ensureStyleSheet() {
-        if(document.querySelector("head link#contributor-list-css")) return;
-        const stylesheet = document.createElement("LINK");
-        stylesheet.setAttribute("rel", "stylesheet");
-        stylesheet.setAttribute("href", import.meta.url.replace(".js", ".css"));
-        stylesheet.id = "contributor-list-css";
-        document.head.appendChild(stylesheet);
     }
 
     async render() {
@@ -55,6 +50,21 @@ class ContributorList extends HTMLElement {
 }
 
 customElements.define("contributor-list", ContributorList);
+
+/* module scoped */
+
+function ensureStyleSheet() {
+    if (!document.querySelector("head link#contributor-list-css"))
+        addStyleSheet();
+}
+
+function addStyleSheet() {
+    const stylesheet = document.createElement("LINK");
+    stylesheet.setAttribute("rel", "stylesheet");
+    stylesheet.setAttribute("href", import.meta.url.replace(".js", ".css"));
+    stylesheet.id = "contributor-list-css";
+    document.head.appendChild(stylesheet);
+}
 
 async function fetchData(src) {
     const url = new URL(src, location.href);
