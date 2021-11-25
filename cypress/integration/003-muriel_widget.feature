@@ -1,9 +1,9 @@
 Feature: Muriel's widget
     As Muriel
     I would like to show a counter widget
-    As an example of how to add widgets
+    So the I can count up and down
 
-    Background: go home
+    Background: Muriel's widget on the home page
         Given I go home
         And this feature is about "muriels-widget"
 
@@ -23,3 +23,5 @@ Feature: Muriel's widget
         When I press the widget "+" button 4 times
         And I press the widget "-" button 1 times
         Then the widget counter displays 3
+
+
