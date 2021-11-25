@@ -17,7 +17,7 @@ const renderHTML = contributors => `
 
 `;
 
-/* Web component */
+/* Custom element */
 
 class ContributorList extends HTMLElement {
 
