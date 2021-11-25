@@ -8,7 +8,7 @@ const renderContributorHTML = contributor => `
 
 const renderHTML = contributors => `
 
-    <heading>Contributors</heading>
+    <header>Contributors</header>
     <ul>
         ${contributors
             .map(renderContributorHTML)

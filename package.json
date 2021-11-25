@@ -14,7 +14,7 @@
     "url": "git+https://github.com/armakuni/akday-cucumber-cypress.git"
   },
   "scripts": {
-    "start": "http-server src --cors --port 8123 -o",
+    "start": "http-server src --cors --port 8123 -o -c-1",
     "test": "cypress run",
     "test:dev": "cypress open"
   },

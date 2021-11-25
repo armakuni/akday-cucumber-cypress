@@ -8,3 +8,7 @@ Then("I see {string} in the main heading", inspect.mainHeadingShouldContain);
 Then("I see {string} in the contributors list", inspect.contributorsListShouldInclude);
 
 Then("I see a contributors list entitled {string}", inspect.contributorsListShouldHaveTitle);
+
+Then("the {string} element exists", inspect.elementBySelectorShouldExist);
+
+Then("the heading for {string} should be {string}", inspect.elementContentShouldInclude);

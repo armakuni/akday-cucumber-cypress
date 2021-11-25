@@ -11,5 +11,13 @@ export function contributorsListShouldInclude(expected) {
 }
 
 export function contributorsListShouldHaveTitle(expected) {
-    cy.get("contributor-list heading").contains(expected).should("exist");
+    cy.get("contributor-list header").contains(expected).should("exist");
+}
+
+export function elementBySelectorShouldExist(selector) {
+    cy.get(selector).should("exist");
+}
+
+export function elementContentShouldInclude(selector, expected) {
+    cy.get(selector).contains(expected).should("exist");
 }
