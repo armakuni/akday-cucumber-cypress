@@ -11,4 +11,10 @@ Then("I see a contributors list entitled {string}", inspect.contributorsListShou
 
 Then("the {string} element exists", inspect.elementBySelectorShouldExist);
 
-Then("the heading for {string} should be {string}", inspect.elementContentShouldInclude);
+Then("the heading for {string} should be {string}", inspect.headerContentShouldInclude);
+
+Then("the widget heading is {string}", inspect.withWidgetChild("header").contentShouldBe);
+
+Then("the widget counter displays {int}", inspect.withWidgetChild(".counter").contentShouldBe);
+
+Then("the widget contains", inspect.widgetShouldContain);

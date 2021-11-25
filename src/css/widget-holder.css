@@ -4,7 +4,7 @@
     box-shadow: 0 0 30px -5px silver;
 }
 
-.widget-holder header {
+.widget-holder > header {
     border-bottom: solid 0.1px silver;
 }
 

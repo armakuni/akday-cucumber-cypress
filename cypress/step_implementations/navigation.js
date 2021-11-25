@@ -1,3 +1,3 @@
-export function GoHome() {
+export function goHome() {
     cy.visit("/");
 }
