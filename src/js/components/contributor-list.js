@@ -59,11 +59,15 @@ function ensureStyleSheet() {
 }
 
 function addStyleSheet() {
-    const stylesheet = document.createElement("LINK");
-    stylesheet.setAttribute("rel", "stylesheet");
-    stylesheet.setAttribute("href", import.meta.url.replace(".js", ".css"));
-    stylesheet.id = "contributor-list-css";
-    document.head.appendChild(stylesheet);
+    try {
+        const stylesheet = document.createElement("LINK");
+        stylesheet.setAttribute("rel", "stylesheet");
+        stylesheet.setAttribute("href", import.meta.url.replace(".js", ".css"));
+        stylesheet.id = "contributor-list-css";
+        document.head.appendChild(stylesheet);
+    } catch(err) {
+        console.error(err);
+    }
 }
 
 async function fetchData(src) {
