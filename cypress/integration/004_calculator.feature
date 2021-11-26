@@ -8,8 +8,8 @@ Feature: A scientific calculator
         And this feature is about "web-calculator"
 
     Scenario: Calculator basic layout
-        Then there is a power on/off button
-        And a display-screen widget
+        Then there is a power on off button
+        And there is a display-screen widget
         And the screen is showing 0
 
     @skip
