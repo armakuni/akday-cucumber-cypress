@@ -1,4 +1,4 @@
-# AK Day Cucumber Cypress project
+# AK Day Cucumber Cypress playground
 
 ## Pre-requisites
 
