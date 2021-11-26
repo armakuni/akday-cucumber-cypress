@@ -16,3 +16,4 @@ Feature: Contributor list
             | name              |
             | Muriel Fizzbucket |
             | Andrei Tarkovsky  |
+            | Andrew Gibson     |
