@@ -18,4 +18,5 @@ Feature: Contributor list
             | Andrei Tarkovsky  |
             | Andrew Gibson     |
             | Sam Bryant        |
+            | John Ikeson       |
             | Lewis England     |
