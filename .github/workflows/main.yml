@@ -1,4 +1,4 @@
-tname: live-pipeline
+name: live-pipeline
 
 on:
   push:
