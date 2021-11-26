@@ -24,3 +24,5 @@ Then("there is a power on off button", inspect.powerOnOffButtonShouldExist);
 Then("there is a display-screen widget", inspect.calculatorDisplayShouldExist);
 
 Then("the screen is showing {int}", inspect.screenIsShowingNumber);
+
+Then("the screen shows {int}", inspect.screenIsShowingNumber);
