@@ -1,6 +1,6 @@
 # AK Day Cucumber Cypress playground
 
-![pipeline](https://github.com/github/docs/actions/workflows/main.yml/badge.svg)
+[![live-pipeline](https://github.com/armakuni/akday-cucumber-cypress/actions/workflows/main.yml/badge.svg)](https://github.com/armakuni/akday-cucumber-cypress/actions/workflows/main.yml)
 
 ## Pre-requisites
 
