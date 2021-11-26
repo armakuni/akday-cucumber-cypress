@@ -1,0 +1,24 @@
+name: live-pipeline
+
+on:
+  push:
+    branches: [ main ]
+    
+  workflow_dispatch:
+
+jobs:
+
+  deploy:    
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: push to Pages branch
+        uses: crazy-max/ghaction-github-pages@v2.5.0
+        with:
+          target_branch: live
+          build_dir: src
+          verbose: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
