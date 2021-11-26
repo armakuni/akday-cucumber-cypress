@@ -9,8 +9,7 @@ body {
     grid-template-columns: 300px 1fr;
 }
 
-body > h1,
-#links
+body > h1
 {
     grid-column-end: 3;
     grid-column-start: 1;
