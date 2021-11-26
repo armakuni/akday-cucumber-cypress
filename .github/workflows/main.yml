@@ -20,3 +20,5 @@ jobs:
           target_branch: live
           build_dir: src
           verbose: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
