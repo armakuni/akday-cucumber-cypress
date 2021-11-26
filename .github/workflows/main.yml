@@ -1,4 +1,4 @@
-name: live-pipeline
+tname: live-pipeline
 
 on:
   push:
@@ -20,7 +20,7 @@ jobs:
         with:          
           start: npm start        
 
-      - name: push to Pages branch
+      - name: Deploy to live branch
         uses: crazy-max/ghaction-github-pages@v2.5.0
         with:
           target_branch: live
