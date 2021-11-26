@@ -1,3 +1,5 @@
 {
-    "baseUrl": "http://localhost:8123"
+    "baseUrl": "http://localhost:8123",
+    "viewportHeight": 1000,
+    "viewportWidth": 1500
 }
