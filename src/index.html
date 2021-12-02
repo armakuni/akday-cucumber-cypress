@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <script type="module" src="./js/components/contributor-list.js"></script>
     <script type="module" src="./js/components/widgets.js"></script>
+    <script type="module" src="./js/components/web-calculator.js"></script>
 </head>
 
 <body>
@@ -38,53 +39,10 @@
             </li>
         </ul>
     </aside>
+
     <contributor-list src="./contributors.json">loading...</contributor-list>
 
-    <div class="calculator-widget">
-        <header>CASIO</header>
-        <div class="screen">0</div>
-        <button class="meta">AC</button>
-        <style>
-            .calculator-widget {
-              margin-left: 20px;
-              padding: 20px;
-              width: 600px;
-              border: outset 5px silver;
-              background-color: #EEE;
-              position: relative;
-              padding-bottom: 40px;
-              text-align: right;
-              font-family: 'Courier New', Courier, monospace;
-              border-radius: 3px;
-              justify-self: center;
-            }
-            .calculator-widget .screen {
-                background-color: #CCC;
-                border: inset 2px #EEE;
-                font-size: 40px;
-                color: #777;
-                padding: 10px;
-                margin-bottom: 20px;
-            }
-            .calculator-widget header {
-                position: absolute;
-                left: 0;
-                bottom: 0;
-                color: silver;
-                background-color: rgba(255,255,255,0.5);
-                padding: 5px;
-            }
-            .calculator-widget button.meta {
-                background-color:rgb(242, 160, 36);
-                border-color: rgb(222, 151, 46);
-                border-width: 3px;
-                border-radius: 3px;
-                color: white;
-                height: 3em;
-                width: 3em;
-            }
-        </style>
-    </div>
+    <web-calculator></web-calculator>
 
     <article class="widget-holder">
         <header>
@@ -92,6 +50,7 @@
         </header>
         <muriels-widget></muriels-widget>
     </article>
+
 </body>
 
 </html>

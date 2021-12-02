@@ -18,3 +18,11 @@ Then("the widget heading is {string}", inspect.withWidgetChild("header").content
 Then("the widget counter displays {int}", inspect.withWidgetChild(".counter").contentShouldBe);
 
 Then("the widget contains", inspect.widgetShouldContain);
+
+Then("there is a power on off button", inspect.powerOnOffButtonShouldExist);
+
+Then("there is a display-screen widget", inspect.calculatorDisplayShouldExist);
+
+Then("the screen is showing {int}", inspect.screenIsShowingNumber);
+
+Then("the screen shows {int}", inspect.screenIsShowingNumber);

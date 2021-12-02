@@ -22,11 +22,22 @@ export function headerContentShouldInclude(selector, expected) {
     cy.get(selector).contains(expected).should("exist");
 }
 
+export function powerOnOffButtonShouldExist() {
+    cy.get("button").contains("AC").should("exist");
+}
+
+export function calculatorDisplayShouldExist() {
+    cy.get("div.screen").should("exist");
+}
+
+export function screenIsShowingNumber(expected) {
+    cy.get("div.screen").should("have.text", expected);
+
+}
 
 export function withWidgetChild(childSelector) {
     return {
         contentShouldBe(expected) {
-            console.log(this.selector, childSelector, expected);
             cy.get(this.selector)
                 .find(childSelector)
                 .contains(expected)
