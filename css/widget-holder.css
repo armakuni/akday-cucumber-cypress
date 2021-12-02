@@ -1,0 +1,19 @@
+.widget-holder {
+    padding: 20px;
+    box-shadow: 0 0 30px -5px silver;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+
+.widget-holder > header {
+    border-bottom: solid 0.1px silver;
+}
+
+.widget-holder > *:not(header) {
+    display: inline-block;
+    margin: 10px 5px;
+    padding: 10px;
+    border: dashed 1px silver;
+    border-radius: 3px;
+}

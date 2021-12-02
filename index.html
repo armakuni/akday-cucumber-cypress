@@ -1,0 +1,56 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Cucumber Cypress playground</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script type="module" src="./js/components/contributor-list.js"></script>
+    <script type="module" src="./js/components/widgets.js"></script>
+    <script type="module" src="./js/components/web-calculator.js"></script>
+</head>
+
+<body>
+    <h1>Cucumber Cypress playground</h1>
+
+    <aside id="requirements">
+        <h2>ⓘ Requirements</h2>
+
+        In order to run the cucumber/cypress playground, you'll probably need:
+        <ul>
+            <li>node.js (14+ should work)</li>
+            <li>Chrome (easiest to start with)</li>
+            <li>Text editor / IDE</li>
+        </ul>
+        <h3>Useful links</h3>
+        <ul>
+            <li>
+                <a href="https://docs.cypress.io/api/commands/click">Cypress documentation (e.g. the click event)</a>
+            </li>
+            <li>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements">Web
+                    Components documentation</a>
+            </li>
+        </ul>
+    </aside>
+
+    <contributor-list src="./contributors.json">loading...</contributor-list>
+
+    <web-calculator></web-calculator>
+
+    <article class="widget-holder">
+        <header>
+            Widgets
+        </header>
+        <muriels-widget></muriels-widget>
+    </article>
+
+</body>
+
+</html>

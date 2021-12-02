@@ -1,0 +1,16 @@
+contributor-list {
+    display: block;
+    padding: 20px;
+    box-shadow: 0 0 30px -5px silver;
+    max-width: 400px;
+}
+
+contributor-list header {
+    border-bottom: solid 0.1px silver;
+    display: block;
+}
+
+contributor-list li {
+    list-style: '\1F44D';
+    padding-left: 0.5em;
+}

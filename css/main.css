@@ -1,0 +1,33 @@
+@import url("./widget-holder.css");
+
+html, body {
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    column-gap: 40px;
+    row-gap: 40px;
+}
+
+body > h1
+{
+    grid-column-end: 3;
+    grid-column-start: 1;
+}
+
+#requirements {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    width: 500px;
+    border: solid 1px #F0F7FF;
+    border-left: solid 20px #86bcfe;
+    padding-left: 10px;
+
+}
+
+#requirements h2 {
+    margin: 10px 0;
+}
